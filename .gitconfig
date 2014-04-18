@@ -1,0 +1,68 @@
+[user]
+	name = Carlos Montalvo
+	email = carlosmontalvo@zetanova.com
+
+[core]
+  excludesfile = ~/.gitignore
+	editor = atom --wait
+  autocrlf = input
+  quotepath = false
+
+[apply]
+  whitespace = nowarn
+
+[format]
+  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
+
+[alias]
+  l = log --oneline --decorate --graph
+  b = branch
+  bd = branch -d
+  bv = branch -v
+  co = checkout
+  master = checkout master
+  # Switch to a branch, creating it if necessary
+  go = checkout -B
+  c = commit
+  cam = commit -a -m
+  cm = commit -m
+  i = init
+  h = help
+  a = add
+  f = fetch
+  d = diff
+  dc = diff --cached
+  dt = difftool
+  dtc = difftool --cached
+  ds = diff --stat
+  dsc = diff --stat --cached
+  s = status --short --branch
+  st = status
+  unstage = reset HEAD --
+  p = push
+  pom = push origin master
+  pl = pull
+  rao = remote add origin
+  cl = clone
+
+[color]
+	diff = auto
+ 	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+
+[github]
