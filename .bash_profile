@@ -9,6 +9,8 @@ for file in bash_prompt exports aliases functions extra; do
   [ -e "$file" ] && source "$file"
 done
 
+export PATH="/usr/local/bin:$PATH"
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
